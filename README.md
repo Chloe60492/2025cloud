@@ -39,3 +39,14 @@ To run the Docker container, use the following command:
 docker run -p 8000:8000 my-python-app
 ```
 Then, you can access the application in your web browser at `http://localhost:8000`.
+
+### automated building description
+
+- `docker-compose.yaml` execution -> builds the image
+  - This file is used to define and run multi-container Docker applications.
+  - It allows you to specify the services, networks, and volumes required for your application.
+  - The `docker-compose up` command builds and starts the containers defined in the `docker-compose.yml` file.
+- Image tagging
+  - The image is tagged with the name of the repository.
+- Push to Docker Hub
+  - The image is pushed to Docker Hub, making it available for others to pull and use.
