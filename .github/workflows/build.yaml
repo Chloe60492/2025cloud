@@ -57,8 +57,8 @@ jobs:
         # Image names check
         docker images
         # Tag and push the app image to Docker Hub
-        docker tag fastapi_app chloe315/2025cloud:fastapi_app
-        docker push chloe315/2025cloud:fastapi_app
+        docker tag 2025cloud-app chloe315/2025cloud:2025cloud-app
+        docker push chloe315/2025cloud:2025cloud-app
         
         # Tag and push the Postgres image to Docker Hub
         docker tag postgres:14 chloe315/2025cloud:postgres
