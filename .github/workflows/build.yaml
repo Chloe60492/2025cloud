@@ -53,7 +53,9 @@ jobs:
       run: |
         # Build the images using docker-compose
         docker-compose -f docker-compose.yaml build
-        
+
+        # Image names check
+        docker images
         # Tag and push the app image to Docker Hub
         docker tag fastapi_app chloe315/2025cloud:fastapi_app
         docker push chloe315/2025cloud:fastapi_app
